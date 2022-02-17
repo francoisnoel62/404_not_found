@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .container {
     display: grid;
     height: 100vh;
@@ -15,7 +19,7 @@
 }
 
 #header > p {
-    font-family: Inconsolata;
+    font-family: 'Inconsolata', monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -43,32 +47,30 @@
 }
 
 #hero_txt > h1 {
-    font-family: Space Mono;
+    font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 71px;
+    font-size: 64px;
+    line-height: 95px;
     letter-spacing: -0.035em;
     color: #333333;
-    width: 75%;
 }
 
 #hero_txt > p {
-    font-family: Space Mono;
+    font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: -0.035em;
     color: #4F4F4F;
-    width: 70%;
 }
 
 #hero_txt > button {
     width: 216px;
     height: 68px;
     background: #333333;
-    font-family: Space Mono;
+    font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -86,9 +88,9 @@
 }
 
 #footer > p {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
@@ -96,8 +98,13 @@
 }
 
 #footer > p > a {
-    color: #BDBDBD;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
 }
 
 @media only screen and (max-width: 1000px) {
