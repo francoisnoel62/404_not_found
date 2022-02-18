@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* COLORS */
+
+:root {
+    --dark: #333;
+    --dark-gray: #4F4F4F;
+    --white: #fff;
+}
+
+/*FULL SCREEN*/
+
+body {
+    padding: 3% 5%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    min-width: 100vw;
+    justify-content: space-around;
+}
+
+.illustration > img {
+    width: 540px;
+}
+
+/* SMALL SCREEN */
+@media screen and (max-width: 1200px) {
+    .container {
+        transform: scale(0.7);
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 1050px) {
+    .illustration > img {
+        width: 287px;
+    }
+
+    .container {
+        transform: scale(1.0);
+        display: flex;
+        flex-direction: column;
+        min-height: 80vh;
+        justify-content: space-evenly;
+    }
+
+}
+
+
