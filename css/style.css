@@ -121,22 +121,29 @@ footer > p > a:hover {
 
 
 /* MOBILE */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .illustration > img {
         width: 287px;
     }
 
     .container {
         transform: scale(1.0);
-        display: flex;
         flex-direction: column;
-        min-height: 80vh;
-        justify-content: space-evenly;
+        margin-bottom: 3vh;
     }
 
     main > h1 {
         font-size: 44px;
         line-height: 71px;
+    }
+
+    main > h4 {
+        font-size: 18px;
+        padding-bottom: 2vh;
+    }
+
+    main > button {
+        padding: 2.5vh;
     }
 
 }
