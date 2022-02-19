@@ -36,6 +36,22 @@ body {
     justify-content: space-between;
 }
 
+header {
+    align-self: flex-start;
+}
+
+header > h3 {
+    font-family: "Inconsolata", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+}
+
+header > h3, main > h1, footer > p {
+    color: var(--dark);
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -47,18 +63,65 @@ body {
     width: 540px;
 }
 
+main {
+    font-family: "Space Mono", sans-serif;
+    margin-left: 4vw;
+}
+
+main > h1 {
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+}
+
+main > h4 {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    max-width: 381px;
+    padding: 2.57rem 0 4.57rem 0;
+    color: var(--dark-gray);
+}
+
+main > button {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -0.035em;
+    width: max-content;
+    padding: 1.6em 3em;
+    color: var(--white);
+    background-color: var(--dark);
+    transition: background-color .1s;
+}
+
+main > button:hover {
+    background: var(--dark-gray);
+}
+
+footer {
+    font-family: "Montserrat", sans-serif;
+}
+
+#anchor {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
 /* SMALL SCREEN */
 @media screen and (max-width: 1200px) {
     .container {
-        transform: scale(0.7);
-        display: flex;
-        justify-content: space-between;
+        transform: scale(0.8);
     }
 }
 
 
 /* MOBILE */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 900px) {
     .illustration > img {
         width: 287px;
     }
@@ -69,6 +132,11 @@ body {
         flex-direction: column;
         min-height: 80vh;
         justify-content: space-evenly;
+    }
+
+    main > h1 {
+        font-size: 44px;
+        line-height: 71px;
     }
 
 }
